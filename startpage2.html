@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / v4.0 / 20250124-->
+<!--Drewbster / v4.1 / 20250203-->
 <html>
 <head>
 
@@ -21,7 +21,7 @@
   function bimgsrch() {var bimgsrch = prompt("Search image?").replace(/&/g,"%26").replace(/ /g,"+"); if (bimgsrch) {location.replace ('https://images.bing.com/search?q=' + bimgsrch);} else {location.replace('https://images.bing.com/');}}
   function gimgsrch() {var gimgsrch = prompt("Search image?").replace(/&/g,"%26").replace(/ /g,"+"); if (gimgsrch) {location.replace ('https://www.google.com/search?tbm=isch&q=' + gimgsrch);} else {location.replace('https://images.google.com/');}}
   function dimgsrch() {var dimgsrch = prompt("Search image?").replace(/&/g,"%26").replace(/ /g,"+"); if (dimgsrch) {location.replace ('https://www.duckduckgo.com/?q=' + dimgsrch + '&iax=images&ia=images');} else {location.replace('https://www.duckduckgo.com/');}}
-  function dmapsrch() {var dmapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+"); if (dmapsrch) {location.replace ('https://www.duckduckgo.com/?q=' + dmapsrch + '&ia=web&iaxm=maps');} else {location.replace('https://duckduckgo.com/?q=China&ia=web&iaxm=maps&strict_bbox=1&bbox=92.80006064271595%2C-53.6100454103325%2C-28.17963082019603%2C202.67940280079344');}}
+  function amapsrch() {var amapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+"); if (amapsrch) {location.replace ('https://beta.maps.apple.com/?address=' + amapsrch);} else {location.replace('https://beta.maps.apple.com/?ll=35.69585908975702%2C77.4224903815848&spn=103.1711797329921%2C195.79384443965853');}}
   function omapsrch() {var omapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/,/g,"%2C"); if (omapsrch) {location.replace ('https://www.openstreetmap.org/search?query=' + omapsrch);} else {location.replace('https://www.openstreetmap.org/#map=3/42.42/79.45');}}
   function bmapsrch() {var bmapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+"); if (bmapsrch) {location.replace ('https://www.bing.com/maps?q=' + bmapsrch);} else {location.replace('https://www.bing.com/maps?q=&cp=28.627291%7E86.252853&lvl=3.1');}}
   function gmapsrch() {var gmapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+"); if (gmapsrch) {location.replace ('https://www.google.com/maps?q=' + gmapsrch);} else {location.replace('https://www.google.com/maps/@26.178163,64.6000441,3z?entry=ttu');}}
@@ -168,8 +168,9 @@ body {font-family: 'Poppins'}
                                                     <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
                                                     <a href="https://translate.google.com/"><span class="bullet">🔹</span>  Google Translate</a>
                                                     <a href="#" onclick="gfsrch()"><span class="bullet">🔹</span>  Google Fonts</a>
-                                                    <a href="https://badnoise.net/TypeRip/"><span class="bullet">🔹</span>  Adobe Fonts</a>
                                                     <a href="https://earth.google.com/web/"><span class="bullet">🔹</span>  Google Earth</a>
+                                                    <a href="#" onclick="amapsrch()"><span class="bullet">🔹</span>  Apple Maps</a>
+                                                    <a href="https://badnoise.net/TypeRip/"><span class="bullet">🔹</span>  Adobe Fonts</a>
                                                     <a href="https://maps.baidu.com/"><span class="bullet">🔹</span>  Baidu Maps</a>
                                                     <a href="#" onclick="bsrch()"><span class="bullet">🔹</span>  Bing Web</a>
                                                     <a href="#" onclick="bimgsrch()"><span class="bullet">🔹</span>  Bing Images</a>
