@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--'Drewbster' / v2.0 / 20250124-->
+<!--'Drewbster' / v2.1 / 20250203-->
 <html>
 <head>
 
@@ -134,16 +134,16 @@
         }
     }
 
-  function dmapsrch()
+  function amapsrch()
     {
-      var dmapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+");
-      if (dmapsrch)
+      var amapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (amapsrch)
         {
-            location.replace ('https://www.duckduckgo.com/?q=' + dmapsrch + '&ia=web&iaxm=maps');
+            location.replace ('https://beta.maps.apple.com/?address=' + amapsrch);
         }
       else
         {
-            location.replace('https://duckduckgo.com/?q=China&ia=web&iaxm=maps&strict_bbox=1&bbox=92.80006064271595%2C-53.6100454103325%2C-28.17963082019603%2C202.67940280079344');
+            location.replace('https://beta.maps.apple.com/?ll=35.69585908975702%2C77.4224903815848&spn=103.1711797329921%2C195.79384443965853');
         }
     }
 
@@ -629,7 +629,6 @@ body
                                           <div class="dropdown-content">
                                             <a href="#" onclick="dimgsrch()"><span class="bullet">🔹</span>  🦆🦆 Go Images</a>
                                             <a href="#" onclick="dvidsrch()"><span class="bullet">🔹</span>  🦆🦆 Go Videos</a>
-                                            <a href="#" onclick="dmapsrch()"><span class="bullet">🔹</span>  🦆🦆 Go Maps</a>
                                             <a href="#" onclick="wikisrch()"><span class="bullet">🔹</span>  Wikipedia</a>
                                             <a href="#" onclick="dicsrch()"><span class="bullet">🔹</span>  Dictionary</a>
                                             <a href="#" onclick="imdbsrch()"><span class="bullet">🔹</span>  IMDB Movie</a>
@@ -641,8 +640,9 @@ body
                                             <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
                                             <a href="https://translate.google.com/"><span class="bullet">🔹</span>  Google Translate</a>
                                             <a href="#" onclick="gfsrch()"><span class="bullet">🔹</span>  Google Fonts</a>
-                                            <a href="https://badnoise.net/TypeRip/"><span class="bullet">🔹</span>  Adobe Fonts</a>
                                             <a href="https://earth.google.com/web/"><span class="bullet">🔹</span>  Google Earth</a>
+                                            <a href="#" onclick="amapsrch()"><span class="bullet">🔹</span>  Apple Maps</a>
+                                            <a href="https://badnoise.net/TypeRip/"><span class="bullet">🔹</span>  Adobe Fonts</a>
                                             <a href="https://maps.baidu.com/"><span class="bullet">🔹</span>  Baidu Maps</a>
                                             <a href="#" onclick="bsrch()"><span class="bullet">🔹</span>  Bing Web</a>
                                             <a href="#" onclick="bimgsrch()"><span class="bullet">🔹</span>  Bing Images</a>
