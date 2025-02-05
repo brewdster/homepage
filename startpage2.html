@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / v4.1 / 20250203-->
+<!--Drewbster / v4.1 / 20250205-->
 <html>
 <head>
 
@@ -31,7 +31,7 @@
   function bestsrch() {var bestsrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+"); if (bestsrch) {location.replace ('https://www.bestbuy.ca/en-ca/search?search=' + bestsrch);} else {location.replace('https://www.bestbuy.ca/en-ca');}}
   function stplsrch() {var stplsrch = prompt("Item?").toLowerCase(); if (stplsrch) {location.replace ('https://www.staples.ca/search?query=' + stplsrch);} else {location.replace('https://www.staples.ca');}}
   function imdbsrch() {var imdbsrch = prompt("Movie title?"); if (imdbsrch) {location.replace ('https://www.imdb.com/find?s=tt&q=' + imdbsrch);} else {location.replace('https://www.imdb.com/');}}
-  function walsrch() {var walsrch = prompt("Item?").toLowerCase(); if (walsrch) {location.replace ('https://www.walmart.ca/search?q=' + walsrch);} else {location.replace('https://www.walmart.ca');}}
+  function walsrch() {var walsrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+"); if (walsrch) {location.replace ('https://www.walmart.ca/search?q=' + walsrch);} else {location.replace('https://www.walmart.ca');}}
   function bvidsrch() {var bvidsrch = prompt("Which video?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+"); if (bvidsrch) {location.replace ('https://www.bing.com/videos/search?q=' + bvidsrch);} else {location.replace('https://www.bing.com/videos/');}}
   function dvidsrch() {var dvidsrch = prompt("Which video?").replace(/&/g,"%26").replace(/ /g,"+"); if (dvidsrch) {location.replace ('https://www.duckduckgo.com/?q=' + dvidsrch + '&iax=videos&ia=videos');} else {location.replace('https://www.duckduckgo.com/');}}
   function dicsrch() {var dicsrch = prompt("What word?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"-"); if (dicsrch) {location.replace ('https://www.dictionary.com/browse/' + dicsrch);} else {location.replace('https://www.dictionary.com/');}}
