@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--'Drewbster' / v2.1 / 20250203-->
+<!--'Drewbster' / v2.1 / 20250205-->
 <html>
 <head>
 
@@ -266,7 +266,7 @@
 
   function walsrch()
     {
-      var walsrch = prompt("Item?").toLowerCase();
+      var walsrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
       if (walsrch)
         {
             location.replace ('https://www.walmart.ca/search?q=' + walsrch);
