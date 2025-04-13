@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<!--'Drewbster' / v2.2 / 20250407-->
+<!--Andrew 'Drewbster' Chua / v2.2 / 20250413-->
 <html>
 <head>
 
 <!-- add icon link -->
 <link rel = "icon" href = "https://brewdster.github.io/homepage/images/ElliefanIX.png" type = "image/x-icon">
 
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-<meta charset="UTF-8">
-<title>My Start Page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 <script type="text/javascript">
 
@@ -305,14 +304,14 @@
 
   function dicsrch()
     {
-      var dicsrch = prompt("What word?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"-");
+      var dicsrch = prompt("What word?").toLowerCase();
       if (dicsrch)
         {
-            location.replace ('https://www.dictionary.com/browse/' + dicsrch);
+            location.replace ('https://dictionary.cambridge.org/dictionary/english/' + dicsrch);
         }
       else
         {
-            location.replace('https://www.dictionary.com/');
+            location.replace('https://dictionary.cambridge.org/');
         }
     }
 
@@ -448,21 +447,27 @@
 
 </script>
 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta charset="UTF-8">
+<title>My Start Page</title>
+
 <style>
 
 body
 {
-    font-family: 'Omnes Medium';
+    font-family: 'Poppins';
 }
 
 .dropbtn
 {
     min-width: 125px;
     background-color: transparent;
-    font-family: 'Omnes Medium';
+    font-family: 'Poppins';
     color: #FFFFFF;
-    font-size: 19px;
-    line-height: 44px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 42px;
     border: none;
     text-shadow: 1px 1px 5px #000000;
 }
@@ -471,10 +476,10 @@ body
 {
     min-width: 125px;
     background-color: transparent;
-    font-family: 'Omnes Medium';
+    font-family: 'Poppins';
     color: white;
-    font-size: 28px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 44px;
     border: none;
 }
 
@@ -489,15 +494,16 @@ body
     display: none;
     position: absolute;
     background-color: #9BC1CF;
-    line-height: 15px;
+    line-height: 17px;
     min-width: 200px;
     z-index: 1;
 }
 
 .dropdown-content a
 {
-    font-family: 'Omnes Medium';
-    font-size: 16px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 500;
     color: #FFFFFF;
     text-align: left;
     padding: 8px;
@@ -521,24 +527,29 @@ body
     background-color: transparent;
 }
 
-.copy-shadow {
+.copy-shadow
+{
     text-shadow: 1px 1px 5px #000000;
 }
 
-.bullet {
+.bullet
+{
     font-size: 12px;
     vertical-align: middle;
 }
 
-.copy-shadow1 {
+.copy-shadow1
+{
     text-shadow: 1px 1px 3px #000000;
 }
 
-.copy-shadow2 {
+.copy-shadow2
+{
     text-shadow: 1px 1px 3px #FFFFFF;
 }
 
-.hlin {
+.hlin
+{
    width: 100%;
    height: 2px;
    margin-left: auto;
@@ -547,7 +558,8 @@ body
    box-shadow: 1px 1px 2px 1px #7D7D7D;
 }
 
-.hlin2 {
+.hlin2
+{
    width: 100%;
    height: 2px;
    margin-left: auto;
@@ -569,7 +581,7 @@ body
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tbody>
             <tr>
-              <td align="center" style="padding: 0px 0px 2px 6px"><a href="https://brewdster.github.io/homepage/startpage2.html" style="text-decoration: none"><img src="images/andrew.png" width="68" border="0" style="vertical-align: bottom"></a></td>
+              <td align="center" style="padding: 0px 0px 0px 3px"><a href="https://brewdster.github.io/homepage/startpage2.html" style="text-decoration: none"><img src="images/ElliefanIX.svg" width="66" border="0" style="vertical-align: bottom"></a></td>
             </tr>
           </tbody>
         </table>
@@ -623,7 +635,7 @@ body
                                       <td width="47" height="50" align="right">
                                         <a href="#" onclick="dksrch()" style="text-decoration: none"><img src="images/search-icon.png" width="35" height="35" style="vertical-align: bottom" border="0"></a>
                                       </td>
-                                      <td width="153" height="50" valign="bottom">
+                                      <td width="153" height="50" valign="middle">
                                         <div class="dropdown">
                                           <button class="dropbtn" onclick="dksrch()"><a href="#" style="color: #FFFFFF; text-decoration: none">🦆🦆 Go</a>   </button>
                                           <div class="dropdown-content">
@@ -672,7 +684,7 @@ body
                                       <td width="47" height="50" align="right">
                                         <img src="images/news-icon.png" width="35" height="35" style="vertical-align: bottom" border="0">
                                       </td>
-                                      <td width="153" height="50" valign="bottom">
+                                      <td width="153" height="50" valign="middle">
                                         <div class="dropdown">
                                          <button class="dropbtn">News     </button>
                                           <div class="dropdown-content">
@@ -682,7 +694,7 @@ body
                                             <a href="https://english.news.cn/"><span class="bullet">🔹</span>  新華 (Xin Hua)</a>
                                             <a href="https://www.chinadaily.com.cn/"><span class="bullet">🔹</span>  China Daily</a>
                                             <a href="https://www.fridayeveryday.com/"><span class="bullet">🔹</span>  Fridayeveryday</a>
-                                            <a href="https://www.pna.gov.ph/"><span class="bullet">🔹</span>  Philippine News Agency</a>
+                                            <a href="https://www.pna.gov.ph/"><span class="bullet">🔹</span>  Phil. News Agency</a>
                                             <a href="https://www.inquirer.net/"><span class="bullet">🔹</span>  Philippine Inquirer</a>
                                             <a href="https://news.abs-cbn.com/"><span class="bullet">🔹</span>  ABS-CBN</a>
                                             <a href="https://rabble.ca/"><span class="bullet">🔹</span>  Rabble</a>
@@ -735,33 +747,30 @@ body
                                       <td width="47" height="50" align="right">
                                         <a href="https://www.marketingkitchen.ca/" style="text-decoration: none"><img src="images/mk_icon.png" width="35" height="35" style="vertical-align: bottom" border="0"></a>
                                       </td>
-                                      <td width="153" height="50" align="left" valign="bottom">
+                                      <td width="153" height="50" align="left" valign="middle">
                                         <div class="dropdown">
-                                          <button class="dropbtn"><span style="font-size: 17px; text-shadow: 1.5px 1.5px 1.5px #EEEEEE"><a href="https://www.marketingkitchen.ca/" style="text-decoration: none; font-size: 17px; color: #6A747C">Marketing</a>  <a href="https://www.mkpromo.ca/" style="text-decoration: none; font-size: 17px; color: #9FAA28">Kitchen</a></button>
+                                          <button class="dropbtn"><span style="font-size: 15px; text-shadow: 1.5px 1.5px 1.5px #EEEEEE"><a href="https://www.marketingkitchen.ca/" style="text-decoration: none; font-size: 15px; color: #6A747C">Marketing</a>  <a href="https://www.mkpromo.ca/" style="text-decoration: none; font-size: 15px; color: #9FAA28">Kitchen</a></button>
                                           <div class="dropdown-content">
                                             <a href="https://login.marketingkitchen.ca/sonicui/7/login/#/"><span class="bullet">🔹</span>  SonicWall</a>
                                             <a href="https://brewdster.github.io/projects/mk_docs.html"><span class="bullet">🔹</span>  MK Docs</a>
-                                            <a href="https://marketingkitchen.vsmidnight.com/JobBoard/TaskView.aspx"><span class="bullet">🔹</span>  Job Board</a>
                                             <a href="https://marketingkitchen.vsmidnight.com/Order/OrderSearch.aspx"><span class="bullet">🔹</span>  Customer Service</a>
-                                            <a href="https://marketingkitchen.vsmidnight.com/JobCost/JobCostSearch.aspx"><span class="bullet">🔹</span>  Job Costing</a>
-                                            <a href="https://marketingkitchen.vsmidnight.com/Item/ItemSearch.aspx"><span class="bullet">🔹</span>  Warehouse</a>
-                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=674"><span class="bullet">🔹</span>  OrderID Lookup</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/JobBoard/TaskView.aspx"><span class="bullet">🔹</span>  Job Board</a>
                                             <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=672"><span class="bullet">🔹</span>  Daily Hours</a>
                                             <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=690"><span class="bullet">🔹</span>  Data Forms Hours</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=674"><span class="bullet">🔹</span>  OrderID Lookup</a>
                                             <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=314"><span class="bullet">🔹</span>  Dockets Status</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/JobCost/JobCostSearch.aspx"><span class="bullet">🔹</span>  Job Costing</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Item/ItemSearch.aspx"><span class="bullet">🔹</span>  Warehouse</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportDesigner.aspx"><span class="bullet">🔹</span>  Reports Designer</a>
                                             <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=683"><span class="bullet">🔹</span>  Jobs Status Report</a>
                                             <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=724"><span class="bullet">🔹</span>  YTD Sales by CSR</a>
-                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportDesigner.aspx"><span class="bullet">🔹</span>  Reports Designer</a>
-                                            <a href="http://192.168.15.3/XMPieDashboard/Login.aspx" target="_blank"><span class="bullet">🔹</span>  uProduce</a>
-                                            <a href="http://192.168.15.38/" target="_blank"><span class="bullet">🔹</span>  KM-1</a>
-                                            <a href="http://192.168.15.59/" target="_blank"><span class="bullet">🔹</span>  KM-1e</a>
-                                            <a href="https://marketingkitchen.atlassian.net/servicedesk/customer/portals"><span class="bullet">🔹</span>  Help Desk</a>
                                             <a href="https://transfer.marketingkitchen.ca/login"><span class="bullet">🔹</span>  SFTP</a>
-                                            <a href="http://localhost:51089/jobs/submitjobs"><span class="bullet">🔹</span>  Switch</a>
+                                            <a href="https://marketingkitchen.atlassian.net/servicedesk/customer/portals"><span class="bullet">🔹</span>  Help Desk</a>
                                             <a href="https://docs.google.com/spreadsheets/d/1S6N6t9KOceP6uCwyStHB39_dgdg0lazIqnYPBZsiXys/edit#gid=2006145818"><span class="bullet">🔹</span>  Office Status</a>
-                                            <a href="https://www.enfocus.com/en/learn" target="_blank"><span class="bullet">🔹</span>  Enfocus Learn</a>
-                                            <a href="https://campus.xmpie.com/eLearning/xmpie-uplan-training/using-built-in-uplan-functions"><span class="bullet">🔹</span>  XMPie uPlan</a>
+                                            <a href="https://www.enfocus.com/en/learn"><span class="bullet">🔹</span>  Enfocus Learn</a>
+                                            <a href="https://campus.xmpie.com/eLearning/xmpie-uplan-training/the-user-view-to-string-function-uv2str"><span class="bullet">🔹</span>  XMPie uPlan</a>
                                             <a href="https://campus.xmpie.com/Tutorials/Set/Introduction-to-uProduce-Hot-Folders"><span class="bullet">🔹</span>  uProduce Hot Folders</a>
+                                            <a href="https://us04web.zoom.us/j/78451225936?pwd=EIZGYIHidbPWWXnl6EgHI74_CCstpl.1#success"><span class="bullet">🔹</span>  Prod. Meeting</a>
                                           </div>
                                         </div>
                                       </td>
@@ -785,7 +794,7 @@ body
                                       <td width="47" height="50" align="right">
                                         <img src="images/tools1.png" width="35" height="35">
                                       </td>
-                                      <td width="153" height="50" valign="bottom">
+                                      <td width="153" height="50" valign="middle">
                                         <div class="dropdown">
                                           <button class="dropbtn">Tools    </button>
                                           <div class="dropdown-content">
@@ -805,7 +814,7 @@ body
                                           </div>
                                         </div>
                                       </td>
-				    </tr>
+                                    </tr>
                                   </tbody>
                                 </table>
                               </td>
@@ -828,7 +837,6 @@ body
   </tbody>
 </table>
 
-<br>
 <br>
 <br>
 
@@ -857,7 +865,7 @@ body
                                     <td width="47" height="50" align="right">
                                       <a href="https://markhampubliclibrary.ca/" style="text-decoration: none"><img src="images/mpl-icon.png" width="35" height="35" style="vertical-align: bottom" border="0"></a>
                                     </td>
-                                    <td width="153" height="50" valign="bottom">
+                                    <td width="153" height="50" valign="middle">
                                       <div class="dropdown">
                                         <button class="dropbtn"><a href="https://markhampubliclibrary.ca/" style="color: #FFFFFF; text-decoration: none">MPL</a>    </button>
                                         <div class="dropdown-content">
@@ -893,7 +901,7 @@ body
                                     <td width="47" height="50" align="right">
                                       <img src="images/finance-icon3.png" width="35" height="35" style="vertical-align: bottom" border="0">
                                     </td>
-                                    <td width="153" height="50" valign="bottom">
+                                    <td width="153" height="50" valign="middle">
                                       <div class="dropdown">
                                         <button class="dropbtn">Finance     </button>
                                         <div class="dropdown-content">
@@ -955,12 +963,12 @@ body
                                       <td width="47" height="50" align="right">
                                         <a href="#" onclick="ytsrch()" style="text-decoration: none"><img src="images/youtube-icon.png" width="35" height="35" style="vertical-align: bottom" border="0"></a>
                                       </td>
-                                      <td width="153" height="50" valign="bottom">
+                                      <td width="153" height="50" valign="middle">
                                         <div class="dropdown">
                                           <button class="dropbtn" onclick="ytsrch()"><a href="#" style="color: #FFFFFF; text-decoration: none">Videos</a>    </button>
                                           <div class="dropdown-content">
                                             <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"><span class="bullet">🔹</span>  Youtube Sports</a>
-                                            <a href="#" onclick="ytpop()"><span class="bullet">🔹</span>  Youtube Popup</a>
+                                            <a href="#" onclick="ytpop()"><span class="bullet">🔹</span>   Youtube Popup</a>
                                             <a href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw"><span class="bullet">🔹</span>  Youtube News</a>
                                             <a href="https://www.youtube.com/feed/trending"><span class="bullet">🔹</span>  Youtube Trending</a>
                                             <a href="https://accounts.google.com/signin"><span class="bullet">🔹</span>  Youtube Sign in</a>
@@ -993,7 +1001,7 @@ body
                                       <td width="47" height="50" align="right">
                                         <img src="images/movies-icon.png" width="35" height="35" style="vertical-align: bottom" border="0">
                                       </td>
-                                      <td width="153" height="50" valign="bottom">
+                                      <td width="153" height="50" valign="middle">
                                         <div class="dropdown">
                                           <button class="dropbtn">Movies     </button>
                                           <div class="dropdown-content">
@@ -1050,9 +1058,9 @@ body
                                   <tbody>
                                     <tr>
                                       <td width="47" height="50" align="right">
-                                        <img src="images/shopping-icon.png" width="35" height="35" style="vertical-align: bottom" border="0">
+                                        <img src="images/shopping2-icon.png" width="35" height="35" style="vertical-align: bottom" border="0">
                                       </td>
-                                      <td width="153" height="50" valign="bottom">
+                                      <td width="153" height="50" valign="middle">
                                         <div class="dropdown">
                                           <button class="dropbtn">Shopping     </button>
                                           <div class="dropdown-content">
@@ -1088,7 +1096,7 @@ body
                                       <td width="47" height="50" align="right">
                                         <a href="https://www.outlook.com/" style="text-decoration: none"><img src="images/mail-icon.png" width="35" height="35" style="vertical-align: bottom" border="0">
                                       </td>
-                                      <td width="153" height="50" valign="bottom">
+                                      <td width="153" height="50" valign="middle">
                                         <div class="dropdown">
                                           <button class="dropbtn"><a href="https://www.outlook.com/login" style="color: #FFFFFF; text-decoration: none">HoTMaiL</a>     </button>
                                           <div class="dropdown-content">
@@ -1138,7 +1146,7 @@ body
                                       <td width="47" height="50" align="right">
                                         <a href="https://www.drawchinese.com/" style="text-decoration: none"><img src="images/china-icon.png" width="35" height="35" style="vertical-align: bottom" border="0"></a>
                                       </td>
-                                      <td width="153" height="50" valign="bottom">
+                                      <td width="153" height="50" valign="middle">
                                         <div class="dropdown">
                                           <button class="dropbtn"><a href="https://www.drawchinese.com/" style="color: #FFFFFF; text-decoration: none"><b>   中 日 한</b></a>       </button>
                                           <div class="dropdown-content">
@@ -1168,10 +1176,10 @@ body
                                   <tbody>
                                     <tr>
                                       <td width="45" height="50" align="right">
-                                        <a href="https://archive.org" style="text-decoration: none"><img src="images/internet_archive-icon2.png" width="30" height="30" style="vertical-align: bottom" border="0">
+                                        <a href="https://archive.org" style="text-decoration: none"><img src="images/internet_archive-icon2.png" width="32" height="32" style="vertical-align: bottom" border="0">
                                       </td>
-                                      <td width="155" height="50" valign="bottom">
-                                        <div><a href="https://archive.org" style="color: #FFFFFF; display: inline-block; font-family: Omnes Medium, Arial, Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 44px; text-align: left; text-decoration: none; width: 155px; -webkit-text-size-adjust: none" class="copy-shadow">  Internet Archive</a></div>
+                                      <td width="155" height="50" valign="middle">
+                                        <div><a href="https://archive.org" style="color: #FFFFFF; display: inline-block; font-family: Poppins, Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 500; line-height: 44px; text-align: left; text-decoration: none; width: 155px; -webkit-text-size-adjust: none" class="copy-shadow">  Internet Archive</a></div>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -1219,7 +1227,7 @@ body
                                   <tbody>
                                     <tr>
                                       <td width="47" height="50" align="right"><a href="#" style="text-decoration: none"><img src="images/firstaid_cache.png" width="35" height="35"></a></td>
-                                      <td width="153" height="50" valign="bottom">
+                                      <td width="153" height="50" valign="middle">
                                         <div class="dropdown">
                                           <button class="dropbtn">Sundry   </button>
                                           <div class="dropdown-content">
@@ -1233,7 +1241,7 @@ body
                                           </div>
                                         </div>
                                       </td>
-				    </tr>
+                                    </tr>
                                   </tbody>
                                 </table>
                               </td>
@@ -1250,8 +1258,8 @@ body
                                 <table align="right" style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border: 1px solid #C9FEFE" cellspacing="0" cellpadding="0" border="0">
                                   <tbody>
                                     <tr>
-                                      <td width="200" height="50" align="center" valign="bottom">
-                                        <div><a href="#" style="color: #000000; display: inline-block; font-family: Omnes Medium, Arial, Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 44px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none" class="copy-shadow">❤️   😊   💎</a></div>
+                                      <td width="200" height="50" align="center" valign="middle">
+                                        <div><a href="#" style="color: #000000; display: inline-block; font-family: Poppins, Arial, Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 44px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none" class="copy-shadow">❤️</a></div>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -1288,8 +1296,8 @@ body
                                 <table align="left" style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border: 1px solid #C9FEFE" cellspacing="0" cellpadding="0" border="0">
                                   <tbody>
                                     <tr>
-                                      <td width="200" height="50" align="center">
-                                        <div><a href="#" target="_blank" class="copy-shadow"><img src="images/sampleicon2.png" width="35" height="35" style="vertical-align: bottom" border="0"></a></div>
+                                      <td width="200" height="50" align="center" valign="middle">
+                                        <div><a href="#" style="color: #000000; display: inline-block; font-family: Poppins, Arial, Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 44px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none" class="copy-shadow">😊</a></div>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -1308,8 +1316,8 @@ body
                                 <table align="right" style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border: 1px solid #C9FEFE" cellspacing="0" cellpadding="0" border="0">
                                   <tbody>
                                     <tr>
-                                      <td width="200" height="50" align="center">
-                                        <div><a href="#" target="_blank" class="copy-shadow"><img src="images/sample_apng.png" width="35" height="35" style="vertical-align: bottom" border="0"></a></div>
+                                      <td width="200" height="50" align="center" valign="middle">
+                                        <div><a href="#" style="color: #000000; display: inline-block; font-family: Poppins, Arial, Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 44px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none" class="copy-shadow">💎</a></div>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -1334,7 +1342,6 @@ body
   </tbody>
 </table>
 
-<br>
 <br>
 <br>
 
