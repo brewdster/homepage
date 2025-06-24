@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Endwar Achu / v1.0 / 20250620-->
+<!--Endwar Achu / v1.2 / 20250624-->
 <html>
 <head>
 
@@ -11,6 +11,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 <script type="text/javascript">
+
+  function ytsrch()
+    {
+      var ytsrch = prompt("Search for?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (ytsrch)
+        {
+            location.replace ('https://www.youtube.com/results?search_query=' + ytsrch);
+        }
+      else
+        {
+            location.replace('https://www.youtube.com/');
+        }
+    }
+
+  function ytpop()
+    {
+      var ytpop = prompt("Reference?");
+      if (ytpop)
+        {
+            location.replace ('https://www.youtube.com/watch_popup?v=' + ytpop + '&mute=0&autoplay=1');
+        }
+      else
+        {
+            location.replace('https://www.youtube.com/');
+        }
+    }
 
   !function(d,s,id)
   {
@@ -176,7 +202,7 @@ body
             <tr>
               <td style="font-size: 30px" class="copy-shadow" width="6%" align="left"><a href="https://accounts.google.com/signin" target="_blank" style="text-decoration: none">⚜️</a> ▪ </td>
               <td width="39%"><div class="hlin2"></div></td>
-              <td style="font-size: 24px" class="copy-shadow" width="10%" align="center">▪⚜️▪<a href="https://www.youtube.com/feed/channels" target="_blank" style="text-decoration: none">🔹</a>▪⚜️▪</td>
+              <td style="font-size: 24px" class="copy-shadow" width="10%" align="center">▪<a href="#" onclick="ytsrch()" target="_blank" style="text-decoration: none">⚜️</a>▪<a href="https://www.youtube.com/feed/channels" target="_blank" style="text-decoration: none">🔹</a>▪<a href="#" onclick="ytpop()" target="_blank" style="text-decoration: none">⚜️</a>▪</td>
               <td width="39%"><div class="hlin2"></div></td>
               <td style="font-size: 30px" class="copy-shadow" width="6%" align="right"> ▪ <a href="https://www.speedtest.net/" target="_blank" style="text-decoration: none">⚜️</a></td>
             </tr>
