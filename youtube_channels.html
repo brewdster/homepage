@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Endwar Achu / v1.2 / 20250624-->
+<!--Endwar Achu / v1.2 / 20250625-->
 <html>
 <head>
 
@@ -37,19 +37,6 @@
             location.replace('https://www.youtube.com/');
         }
     }
-
-  !function(d,s,id)
-  {
-    var js,fjs=d.getElementsByTagName(s)[0];
-    if(!d.getElementById(id))
-      {
-        js=d.createElement(s);
-        js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);
-      }
-  }
-  (document,'script','weatherwidget-io-js');
 
 </script>
 
@@ -168,7 +155,8 @@ body
   border-right: solid; border-right-width: 1px; border-right-color: #000000;
   border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #000000;
   border-left: solid; border-left-width: 1px; border-left-color: #FFFFFF;
-  background-color: #FF6700;
+  //background-color: #FF6700;
+  background: linear-gradient(45deg, #FF6700, #FF6700, #EE1C25);
 }
 
 </style>
@@ -617,6 +605,9 @@ body
   </tbody>
 </table>
 
+<br>
+<br>
+
 <table width="100%" cellspacing="0" cellpadding="0" border="0">
   <tbody>
     <tr>
@@ -699,9 +690,7 @@ body
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tbody>
                     <tr>
-                      <td align="center" style="padding: 80px 0px 0px 3px">
-                        <iframe style="vertical-align: bottom" src="https://free.timeanddate.com/clock/i9pce7fe/n250/szw80/szh80/hoc888/hbw3/cf100/hncffae20/fas24/fdi64/mqcf00/mqs3/mql13/mqw4/mqd94/mhcfff/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hss1/hsl90/hsw2/hsr8" frameborder="0" width="80" height="80"></iframe>
-                      </td>
+                      <td></td>
                     </tr>
                   </tbody>
                 </table>
@@ -786,10 +775,13 @@ body
   </tbody>
 </table>
 
+<br>
+<br>
+
 <table width="100%" cellspacing="0" cellpadding="0" border="0">
   <tbody>
     <tr>
-      <td style="padding: 0px 30px 0px 30px">
+      <td style="padding: 0px 30px 20px 30px">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
@@ -920,77 +912,10 @@ body
   </tbody>
 </table>
 
-<br>
-<br>
-
 <table width="100%" cellspacing="0" cellpadding="0" border="0">
   <tbody>
     <tr>
-      <td width="6%"></td>
-      <td width="88%" style="padding: 10px 27px 0px 27px">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="btn_bevel" style="background-color:rgba(200,200,200,0.30)">
-          <tbody>
-            <tr>
-              <td>
-                <!--https://weatherwidget.io/-->
-                <div><a class="weatherwidget-io" href="https://forecast7.com/en/43d86n79d34/markham/" data-label_1="Markham, ON" data-label_2="7-day forecast" data-font="Roboto" data-icons="Climacons Animated" data-basecolor="" data-shadow="#6c6c6c" data-accent="rgba(200, 200, 200, 0.25)" data-textcolor="#000000" data-highcolor="#000000" data-lowcolor="#ffffff" data-suncolor="#ffff00" data-mooncolor="#ffae20" data-cloudcolor="#6a6a6a" data-cloudfill="#ffffff" data-raincolor="#4becf9" data-snowcolor="#4becf9"></a></div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-      <td width="6%"></td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-  <tbody>
-    <tr>
-      <td width="6%"></td>
-      <td width="88%" style="padding: 18px 27px 2px 27px">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="btn_bevel" style="background-color:rgba(235,235,235,0.40)">
-          <tbody>
-            <tr>
-              <td>
-                <!--https://www.tradingview.com/widget/#charts-->
-                <div class="tradingview-widget-container">
-                  <div class="tradingview-widget-container__widget"></div>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-                    {
-                      "symbols":
-                        [
-                          {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
-                          {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
-                          {"description": "Dow Jones","proName": "SPREADEX:DJI"},
-                          {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
-                          {"description": "Bitcoin","proName": "BITSTAMP:BTCUSD"},
-                          {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
-                          {"description": "Nvidia","proName": "NASDAQ:NVDA"}
-                        ],
-                        "isTransparent": true,
-                        "showSymbolLogo": true,
-                        "colorTheme": "light",
-                        "locale": "en"
-                    }
-                  </script>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-      <td width="6%"></td>
-    </tr>
-  </tbody>
-</table>
-
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-  <tbody>
-    <tr>
-      <td style="padding: 28px 30px 0px 30px">
+      <td style="padding: 0px 30px 6px 30px">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
@@ -1002,6 +927,16 @@ body
             </tr>
           </tbody>
         </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td align="center">
+        <iframe style="vertical-align: bottom" src="https://free.timeanddate.com/clock/i9pce7fe/n250/szw80/szh80/hoc888/hbw3/cf100/hncffae20/fas24/fdi64/mqcf00/mqs3/mql13/mqw4/mqd94/mhcfff/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hss1/hsl90/hsw2/hsr8" frameborder="0" width="80" height="80"></iframe>
       </td>
     </tr>
   </tbody>
