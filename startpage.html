@@ -164,11 +164,11 @@
       var bmapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+");
       if (bmapsrch)
         {
-            location.replace('https://www.bing.com/maps?q=&cp=19.505887%7E39.510087&lvl=3.1&style=r');
+            location.replace ('https://www.bing.com/maps?q=' + bmapsrch);
         }
       else
         {
-            location.replace('https://www.bing.com/maps?q=&cp=28.627291%7E86.252853&lvl=3.1');
+            location.replace('https://www.bing.com/maps?q=&cp=19.505887%7E39.510087&lvl=3.1&style=r');
         }
     }
 
