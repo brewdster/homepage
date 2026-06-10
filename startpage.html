@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Endwar Achu / v5.6 / 20260529-->
+<!--Endwar Achu / v5.6 / 20260609-->
 <html>
 <head>
 
@@ -369,14 +369,14 @@
 
   function airsrch()
     {
-      var airsrch = prompt("Item?");
+      var airsrch = prompt("Item?").replace(/ /g,"+").replace(/&/g,"%26");
       if (airsrch)
         {
-            location.replace ('https://rewards.airmiles.ca/merchandise/search?q=' + airsrch);
+            location.replace ('https://rewards.bluerewards.ca/search?q=' + airsrch);
         }
       else
         {
-            location.replace('https://rewards.airmiles.ca/merchandise');
+            location.replace('https://rewards.bluerewards.ca/merchandise');
         }
     }
 
