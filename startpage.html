@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Endwar Achu / v5.7 / 20260711-->
+<!--Endwar Achu / v6.0 / 20260712-->
 <html>
 <head>
 
@@ -592,6 +592,20 @@ body
   border-left: solid; border-left-width: 1px; border-left-color: #FFD700;
   background-color: rgba(200,200,200,0.2);
 }
+
+.hmove  {display: flex;}
+.hitem  {width: 100%; flex-shrink: 0; font-size: 16px; font-weight: 500; color: #FFD700; text-shadow: 2px 2px 2px #000000;}
+.hwrap  {overflow: hidden;}
+.hmove  {animation: tickerh linear 50s infinite;}
+.hmove:hover
+        {animation-play-state: paused;}
+
+@keyframes tickerh
+{
+  0% { transform: translatex(100%);}
+  100% { transform: translatex(-200%);}
+}
+//https://code-boxx.com/html-css-news-ticker-horizontal-vertical/
 
 </style>
 
@@ -1381,7 +1395,7 @@ body
   <tbody>
     <tr>
       <td width="6%"></td>
-      <td width="88%" style="padding: 20px 27px 0px 27px">
+      <td width="88%" style="padding: 20px 27px 20px 27px">
         <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:rgba(200,200,200,0.2)" class="btn_bevel">
           <tbody>
             <tr>
@@ -1398,13 +1412,33 @@ body
   </tbody>
 </table>
 
-<br>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td style="padding: 0px 30px 0px 30px"> <!--background-color: rgba(255,255,255,.1)-->
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td>
+                <div class="hwrap">
+                  <div class="hmove">
+                    <div class="hitem"><a href="https://www.cbsnews.com/news/senator-lindsey-graham-dies-after-brief-and-sudden-illness/" target="_blank" style="color: #FFD700; text-decoration: underline">Linsey Graham: DEAD at 71.</a></div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <table width="100%" cellspacing="0" cellpadding="0" border="0">
   <tbody>
     <tr>
       <td width="6%"></td>
-      <td width="88%" style="padding: 18px 27px 2px 27px">
+      <td width="88%" style="padding: 20px 27px 2px 27px">
         <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:rgba(225,225,225,0.2)" class="btn_bevel">
           <tbody>
             <tr>
@@ -1444,7 +1478,7 @@ body
 <table width="100%" cellspacing="0" cellpadding="0" border="0">
   <tbody>
     <tr>
-      <td style="padding: 28px 30px 0px 30px">
+      <td style="padding: 23px 30px 10px 30px">
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
