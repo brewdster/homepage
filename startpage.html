@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Endwar Achu / v6.2 / 20260828-->
+<!--Endwar Achu / v6.2 / 20260831-->
 <html>
 <head>
 
@@ -395,7 +395,11 @@
 
   function yfsrch()
     {
-      var yfsrch = prompt("Which index/stock? (^GSPC, ^IXIC, ^DJI, NVDA, GC=F)").toUpperCase();
+      var yfsrch = prompt("Which index/stock? (GSPC, IXIC, DJI, NVDA, GC=F, BTC-USD)").toUpperCase();
+      if (yfsrch == "GSPC" || yfsrch == "IXIC" || yfsrch == "DJI")
+        {
+            yfsrch = "^" + yfsrch;
+        }
       if (yfsrch)
         {
             location.replace ('https://finance.yahoo.com/quote/' + yfsrch + '/history');
